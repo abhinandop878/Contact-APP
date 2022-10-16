@@ -5,6 +5,7 @@
             <div class="row g-3">
                 <div *ngFor="let i of contactData.data"class="col col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
                     <div class="card" style="min-height: 400px;">
+                        <img height="300px"src="{{i.image}}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title"><strong>Name:</strong> {{i.name}}</h5>
                           <p class="card-text"><strong>EmailId:</strong> {{i.email}}</p>
