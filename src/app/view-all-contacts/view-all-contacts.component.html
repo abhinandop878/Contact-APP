@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<div class="comtainer">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row">
+                <div *ngFor="let i of contactData.data"class="col col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>Name:</strong> {{i.name}}</h5>
+                          <p class="card-text"><strong>EmailId:</strong> {{i.email}}</p>
+                          <p class="card-text"><strong>Vat:</strong> {{i.vat}}</p>
+                          <p class="card-text"><strong>Phone No:</strong> {{i.phone}}</p>
+                          <p class="card-text"><strong>Country:</strong> {{i.country}}</p>
+                          <p class="card-text"><strong>Address:</strong> {{i.address}}</p>
+                          <a href="#" class="btn btn-primary">view</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
